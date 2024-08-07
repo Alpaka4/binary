@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    canvas {
+      display: block;
+      width: 45%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    let number = prompt()
+    function fakeBin(n) {
+      let result = "";
+      let Number = n;
+      for (let digit of Number) {
+        if (digit >= 5) {
+          result += "1";
+        }
+        if (digit < 5) {
+          result += "0";
+        }
+      }
+      console.log(result);
+    }
+    fakeBin(number)
+  </script>
+</body>
+
+</html>
